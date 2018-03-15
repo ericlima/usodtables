@@ -23,7 +23,10 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.dtOptions = {
       pagingType: 'full_numbers',
-      pageLength: 10
+      pageLength: 10,
+      language: {
+        url: 'https://cdn.datatables.net/plug-ins/1.10.9/i18n/Portuguese-Brasil.json'
+     }
     };
     this.http.get('http://10.10.2.138:8080/equivdisciplina/ies/5')
 
