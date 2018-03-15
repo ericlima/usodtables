@@ -5,13 +5,21 @@
       <th>ID</th>
       <th>First name</th>
       <th>Last name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let person of persons">
-      <td>{{ person.id }}</td>
-      <td>{{ person.nomeDiscip }}</td>
+      <td>{{ person.idDisciplina }}</td>
+      <td>{{ person.descricao }}</td>
       <td>{{ person.cargaHoraria }}</td>
+      <td>{{ person.idDisPad }}</td>
+      <td>{{ person.descricaoDisciplinaPadrao }}</td>
+      <td>{{ person.cargaHorariaDisciplinaPadrao }}</td>
+      <td><button></button></td>
     </tr>
   </tbody>
   </table>
